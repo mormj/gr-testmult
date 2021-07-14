@@ -11,5 +11,6 @@
 ########################################################################
 install(FILES
     api.h
-    mult.h DESTINATION include/testmult
+    mult.h
+    fanout.h DESTINATION include/testmult
 )

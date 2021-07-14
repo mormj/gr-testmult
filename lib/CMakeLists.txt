@@ -47,6 +47,7 @@ include(GrPlatform) #define LIB_SUFFIX
 
 list(APPEND testmult_sources
     mult_impl.cc
+    fanout_impl.cc
 )
 
 set(testmult_sources "${testmult_sources}" PARENT_SCOPE)

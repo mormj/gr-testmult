@@ -32,3 +32,4 @@ include(GrTest)
 
 set(GR_TEST_TARGET_DEPS gnuradio-testmult)
 GR_ADD_TEST(qa_mult ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_mult.py)
+GR_ADD_TEST(qa_fanout ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_fanout.py)

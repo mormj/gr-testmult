@@ -7,5 +7,6 @@
 #
 
 install(FILES
-    testmult_mult.block.yml DESTINATION share/gnuradio/grc/blocks
+    testmult_mult.block.yml
+    testmult_fanout.block.yml DESTINATION share/gnuradio/grc/blocks
 )
