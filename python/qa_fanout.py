@@ -29,7 +29,7 @@ class qa_fanout(gr_unittest.TestCase):
         # set up fg
         nitems = 100000
         data = [complex(x,-x) for x in range(nitems)]
-        vsrc = blocks.vector_source_c(data, False)
+        vsrc = blocks.vector_source_c(data, repeat=False)
         vsnk_1 = blocks.vector_sink_c()
         vsnk_2 = blocks.vector_sink_c()
         vsnk_3 = blocks.vector_sink_f()
