@@ -58,28 +58,28 @@ int mult_impl::work(int noutput_items,
     cudaStreamSynchronize(d_stream);
 
 
-    gr_complex host_in1[noutput_items];
-    gr_complex host_in2[noutput_items];
-    gr_complex host_out[noutput_items];
+    // gr_complex host_in1[noutput_items];
+    // gr_complex host_in2[noutput_items];
+    // gr_complex host_out[noutput_items];
 
-    cudaMemcpy(host_in1, in1, sizeof(gr_complex)*noutput_items, cudaMemcpyDeviceToHost);
-    cudaMemcpy(host_in2, in2, sizeof(gr_complex)*noutput_items, cudaMemcpyDeviceToHost);
-    cudaMemcpy(host_out, out, sizeof(gr_complex)*noutput_items, cudaMemcpyDeviceToHost);
+    // cudaMemcpy(host_in1, in1, sizeof(gr_complex)*noutput_items, cudaMemcpyDeviceToHost);
+    // cudaMemcpy(host_in2, in2, sizeof(gr_complex)*noutput_items, cudaMemcpyDeviceToHost);
+    // cudaMemcpy(host_out, out, sizeof(gr_complex)*noutput_items, cudaMemcpyDeviceToHost);
 
-    std::cout << "in1: ";
-    for (int i=0; i<noutput_items; i++)
-        std::cout << host_in1[i] << ", ";
-    std::cout << std::endl;
+    // std::cout << "in1: ";
+    // for (int i=0; i<noutput_items; i++)
+    //     std::cout << host_in1[i] << ", ";
+    // std::cout << std::endl;
 
-    std::cout << "in2: ";
-    for (int i=0; i<noutput_items; i++)
-        std::cout << host_in2[i] << ", ";
-    std::cout << std::endl;
+    // std::cout << "in2: ";
+    // for (int i=0; i<noutput_items; i++)
+    //     std::cout << host_in2[i] << ", ";
+    // std::cout << std::endl;
 
-    std::cout << "out: ";
-    for (int i=0; i<noutput_items; i++)
-        std::cout << host_out[i] << ", ";
-    std::cout << std::endl;
+    // std::cout << "out: ";
+    // for (int i=0; i<noutput_items; i++)
+    //     std::cout << host_out[i] << ", ";
+    // std::cout << std::endl;
 
 
     // Tell runtime system how many output items we produced.

@@ -9,6 +9,8 @@
 #define INCLUDED_TESTMULT_FANOUT_IMPL_H
 
 #include <testmult/fanout.h>
+#include <cuda.h>
+#include <cuda_runtime_api.h>
 
 namespace gr {
 namespace testmult {
@@ -16,7 +18,7 @@ namespace testmult {
 class fanout_impl : public fanout
 {
 private:
-    // Nothing to declare in this block.
+    cudaStream_t d_stream;
 
 public:
     fanout_impl();
