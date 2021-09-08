@@ -30,7 +30,8 @@ include(GrPybind)
 
 list(APPEND testmult_python_files
     mult_python.cc
-    fanout_python.cc python_bindings.cc)
+    fanout_python.cc
+    deinterleave_python.cc python_bindings.cc)
 
 GR_PYBIND_MAKE_OOT(testmult 
    ../..

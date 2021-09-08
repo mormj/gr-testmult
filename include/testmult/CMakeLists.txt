@@ -12,5 +12,6 @@
 install(FILES
     api.h
     mult.h
-    fanout.h DESTINATION include/testmult
+    fanout.h
+    deinterleave.h DESTINATION include/testmult
 )

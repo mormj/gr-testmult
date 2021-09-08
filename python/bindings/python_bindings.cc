@@ -23,6 +23,7 @@ namespace py = pybind11;
 // BINDING_FUNCTION_PROTOTYPES(
     void bind_mult(py::module& m);
     void bind_fanout(py::module& m);
+    void bind_deinterleave(py::module& m);
 // ) END BINDING_FUNCTION_PROTOTYPES
 
 
@@ -53,5 +54,6 @@ PYBIND11_MODULE(testmult_python, m)
     // BINDING_FUNCTION_CALLS(
     bind_mult(m);
     bind_fanout(m);
+    bind_deinterleave(m);
     // ) END BINDING_FUNCTION_CALLS
 }

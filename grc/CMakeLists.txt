@@ -8,5 +8,6 @@
 
 install(FILES
     testmult_mult.block.yml
-    testmult_fanout.block.yml DESTINATION share/gnuradio/grc/blocks
+    testmult_fanout.block.yml
+    testmult_deinterleave.block.yml DESTINATION share/gnuradio/grc/blocks
 )
